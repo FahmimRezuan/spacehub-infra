@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spacehub-configmap
+  namespace: spacehub
+data:
+  DEBUG_MODE: false
+  ENVIRONMENT: production
+  SECRET_TOKEN: ""
+  NOTIFY_HOOK: ""
+  GRPPATH: ""
+
+

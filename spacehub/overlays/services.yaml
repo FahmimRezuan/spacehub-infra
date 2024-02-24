@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spacehub-backend-service
+  labels:
+    app: spacehub-backend
+spec:
+  selector:
+    app: spacehub-backend
+  ports:
+  - protocol: TCP
+    name: http
+    port: 80
+    targetPort: 8000
